@@ -1,0 +1,85 @@
+body::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url(https://oir.mobi/uploads/posts/2021-03/1616438434_8-p-informatsionnii-fon-8.jpg) center / cover no-repeat;
+    filter: blur(3px);
+    /* Размытие */
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    background-color: #8b8b8b;
+    border-radius: 5px 5px;
+    color: #1f1f3f;
+    ;
+}
+
+input {
+    border-radius: 5px 5px;
+}
+
+button {
+    border-radius: 7px 7px;
+    color: black;
+    background-color: #f8995a;
+}
+
+header {
+    background-color: #fff;
+}
+
+.block {
+    /* or absolute */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 20px 20px;
+    /* border: 2px solid black;*/
+}
+
+.element {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    width: 50px;
+    text-align: center;
+    border: 2px solid #B25538;
+    border-radius: 5px 5px;
+}
+
+.el_matrix {
+    width: 50px;
+    text-align: center;
+    /*height: : 50px;*/
+    border: 2px solid #B25538;
+    border-radius: 5px 5px;
+}
+
+.umova {
+    color: rgb(0, 0, 0);
+}
+
+#img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headText {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px 20px;
+    background-color: rgb(190, 149, 149);
+    width: 60em
+}

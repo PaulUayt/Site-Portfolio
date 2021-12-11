@@ -1,0 +1,167 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v34/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4TbMPrQ.ttf) format('truetype');
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+footer {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background: url(https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) no-repeat center center /cover;
+    padding: 100px 0;
+}
+
+.container {
+    width: 1000px;
+    height: auto;
+    border: 0px solid white;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    height: 150px;
+}
+
+.head {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    /*background: rgb(0, 0, 0);*/
+    background: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80) no-repeat center center /cover;
+    border-radius: 10px 0 0 0;
+    margin-right: 7px;
+    color: white;
+}
+
+.userpic {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    background: url(../img/user_ph.webp) center center /cover;
+    border-radius: 0 10px 0 0;
+}
+
+.nav ul {
+    display: flex;
+    background: rgb(0, 0, 0);
+    /*background: url(https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=829&q=80);
+    */
+    margin: 7px 0;
+}
+
+.nav li a {
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    border-right: 2px solid rgb(161, 161, 161);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: all .4s ease;
+}
+
+.nav li a:hover {
+    color: black;
+    background: white;
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+.content {
+    border-radius: 0 0 0 10px;
+    width: 70%;
+    height: auto;
+    margin-right: 7px;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.works li a {
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+    transition: color .4s ease;
+}
+
+.works li a:hover {
+    color: red;
+}
+
+.sidebar {
+    /*background: url(https://images.unsplash.com/photo-1542966336-22953b5f7404?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80);
+    */
+    background: url(../img/fon.jfif) no-repeat center center / cover;
+    border-radius: 0 0 10px 0;
+    width: 30%;
+    padding: 20px;
+    color: white;
+}
+
+.skills li {
+    padding: 10px 0;
+    transition: transform .4s ease;
+}
+
+.skills li:hover {
+    transform: translateX(10px);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+}
+
+.github a:hover {
+    background: #191919;
+    color: #fff;
+}
+
+.instagram a:hover {
+    background: #3f729b;
+    color: #fff;
+}
+
+.facebook a:hover {
+    background: #3b5998;
+    color: #fff;
+}
+
+.telegram a:hover {
+    background: #249bd7;
+    color: #fff;
+}
+
+.social-netw {
+    margin-left: 42%;
+}

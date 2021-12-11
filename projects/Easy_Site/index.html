@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRIX</title>
+    <link rel="icon" href="img//logo_matrix.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id='main'>
+        <header>
+            <img src="img/logo.png" id="img1">
+        </header>
+
+        <main>
+
+            <div class="block">
+                <h3>Транспонування матриці</h3>
+                <label class="umova"><b>Вкажіть кількість стовпців матриці <i class="numFormat">N</i>:</b></label>
+                <input type="number" placeholder="Enter number" id="numT1">
+                <br>
+                <label class="umova"><b>Вкажіть кількість рядків матриці <i class="numFormat">M</i>:</b></label>
+                <input type="number" placeholder="Enter number" id="numT2">
+                <br>
+                <button type="button" name="button_f" onclick="doMatrix(1, 'T')">Вручну</button>
+                <button type="button" name="button_f" onclick="changeMatrix(1,2,'T')">Заповнити рандомно та транспонувати</button>
+                <p class="result" id="buildMatrix1"></p>
+                <p class="result" id="resultTrans1"></p>
+                <br>
+            </div>
+
+            <div class="block">
+                <h3>Множення матриці на число</h3>
+                <label class="umova"><b>Вкажіть кількість стовпців матриці <i class="numFormat">N</i>:</b></label>
+                <input type="number" placeholder="Enter number" id="numMult1">
+                <br>
+                <label class="umova"><b>Вкажіть кількість рядків матриці <i class="numFormat">M</i>:</b></label>
+                <input type="number" placeholder="Enter number" id="numMult2">
+                <br>
+                <label class="umova"><b>Вкажіть число, на яке необхіно помножити матрицю <i class="numFormat">k</i>:</b></label>
+                <input type="number" placeholder="Enter number" id="numMultMain">
+                <br>
+                <button type="button" name="button_f" onclick="doMatrix(4, 'Mult')">Вручну</button>
+                <button type="button" name="button_f" onclick="changeMatrix(4,2, 'Mult')">Заповнити рандомно та транспонувати</button>
+                <p class="result" id="buildMatrix4"></p>
+                <p class="result" id="resultTrans4"></p>
+                <br>
+            </div <div class="block">
+            <h3>Додавання матриць</h3>
+    </div>
+    <div class="block">
+        <h3>Множення матриць</h3>
+    </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
