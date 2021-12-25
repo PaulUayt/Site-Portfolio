@@ -7,6 +7,11 @@
     src: url(https://fonts.gstatic.com/s/comfortaa/v34/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4TbMPrQ.ttf) format('truetype');
 }
 
+b {
+    font-weight: bold;
+    /*color: #1f30c5;*/
+}
+
 h3 {
     font-size: 25px;
     font-weight: bold;
@@ -99,6 +104,7 @@ body {
 .works li a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
     line-height: 40px;
     transition: color .4s ease;
 }
@@ -124,8 +130,12 @@ body {
 
 .skills li:hover {
     transform: translateX(10px);
-    color: rgb(255, 255, 255);
+    /*color: rgb(255, 255, 255);*/
     border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    background: white;
+    width: auto;
 }
 
 .social a {

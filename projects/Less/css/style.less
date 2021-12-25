@@ -1,0 +1,76 @@
+@import "vars";
+
+body::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: @backgr_img no-repeat center center /cover;
+}
+
+.head {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: @font_s_head;
+    border-radius: @border_rad;
+    background: @backgrHead_img no-repeat center center /cover;
+    color: @main_t-color;
+}
+
+.nav ul {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    display: flex;
+    list-style: none;
+}
+
+.button {
+    padding: 0 50px 0 50px;
+    height: auto;
+    text-decoration: none;
+    background: @main_b-color;
+    color: @main_t-color;
+    font-weight: bold;
+    font-size: @font_s_text;
+    border-radius: @border_rad;
+    border: 0;
+    margin-left: 10px;
+}
+
+.button--first:focus {
+    .animation-blink(button--first, @main_t-color, @c6, @main_b-color );
+}
+
+.button--second:focus {
+    .animation-blink(button--second, @main_t-color, @c2, @main_b-color );
+}
+
+.button--three:focus {
+    .animation-blink(button--three, @main_t-color, @c4, @main_b-color );
+}
+
+.button--four:focus {
+    .animation-blink(button--four, @main_t-color, @c5, @main_b-color );
+}
+
+.animation-blink(@name_, @col1, @col2, @col3, @time: 3s) {
+    @name: ~"animation-blink-@{name_}";
+    animation: @name @time ease-in-out infinite alternate;
+
+    @keyframes @name {
+        0% {color: @col1; background-color: @col3;}
+        50% {color: @col2; background-color: @col2;}
+        to {color: @col3; background-color: @col1;}
+    }
+}
+
+
+

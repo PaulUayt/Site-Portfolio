@@ -11,51 +11,84 @@
 </head>
 
 <body>
-    <div id='main'>
-        <header>
-            <img src="img/logo.png" id="img1">
-        </header>
+    <header>
+        <img src="img/logo.png" id="img1">
+    </header>
 
-        <main>
+    <main>
 
-            <div class="block">
-                <h3>Транспонування матриці</h3>
-                <label class="umova"><b>Вкажіть кількість стовпців матриці <i class="numFormat">N</i>:</b></label>
-                <input type="number" placeholder="Enter number" id="numT1">
-                <br>
-                <label class="umova"><b>Вкажіть кількість рядків матриці <i class="numFormat">M</i>:</b></label>
-                <input type="number" placeholder="Enter number" id="numT2">
-                <br>
-                <button type="button" name="button_f" onclick="doMatrix(1, 'T')">Вручну</button>
-                <button type="button" name="button_f" onclick="changeMatrix(1,2,'T')">Заповнити рандомно та транспонувати</button>
-                <p class="result" id="buildMatrix1"></p>
-                <p class="result" id="resultTrans1"></p>
-                <br>
-            </div>
+        <div class="block">
+            <h3>Транспонування матриці</h3>
+            <label class="umova"><b>Кількість рядків матриці <i class="numFormat">N</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numT1">
+            <br>
+            <label class="umova"><b>Кількість стовпців матриці <i class="numFormat">M</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numT2">
+            <br>
+            <button type="button" name="button_f" onclick="doMatrix(1, 'T')">Вручну</button>
+            <button type="button" name="button_f" onclick="changeMatrix(1,2,'T')">Заповнити рандомно та транспонувати</button>
+            <p class="result" id="buildMatrix1"></p>
+            <p class="result" id="resultTrans1"></p>
+            <br>
+        </div>
 
-            <div class="block">
-                <h3>Множення матриці на число</h3>
-                <label class="umova"><b>Вкажіть кількість стовпців матриці <i class="numFormat">N</i>:</b></label>
-                <input type="number" placeholder="Enter number" id="numMult1">
-                <br>
-                <label class="umova"><b>Вкажіть кількість рядків матриці <i class="numFormat">M</i>:</b></label>
-                <input type="number" placeholder="Enter number" id="numMult2">
-                <br>
-                <label class="umova"><b>Вкажіть число, на яке необхіно помножити матрицю <i class="numFormat">k</i>:</b></label>
-                <input type="number" placeholder="Enter number" id="numMultMain">
-                <br>
-                <button type="button" name="button_f" onclick="doMatrix(4, 'Mult')">Вручну</button>
-                <button type="button" name="button_f" onclick="changeMatrix(4,2, 'Mult')">Заповнити рандомно та транспонувати</button>
-                <p class="result" id="buildMatrix4"></p>
-                <p class="result" id="resultTrans4"></p>
-                <br>
-            </div <div class="block">
+        <div class="block">
+            <h3>Множення матриці на число</h3>
+            <label class="umova"><b>Кількість рядків матриці <i class="numFormat">N</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numMult1">
+            <br>
+            <label class="umova"><b>Кількість стовпців матриці <i class="numFormat">M</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numMult2">
+            <br>
+            <label class="umova"><b>Число, на яке необхіно помножити матрицю <i class="numFormat">k</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numMultMain">
+            <br>
+            <button type="button" name="button_f" onclick="doMatrix(4, 'Mult')">Вручну</button>
+            <button type="button" name="button_f" onclick="changeMatrix(4,2, 'Mult')">Заповнити рандомно та помножити</button>
+            <p class="result" id="buildMatrix4"></p>
+            <p class="result" id="resultTrans4"></p>
+            <br>
+        </div <div class="block">
+
+        <div class="block">
+            <h3>Множення матриць</h3>
+            <label class="umova"><b>Кількість рядків 1 матриці <i class="numFormat">N</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numMult2N11">
+            <br>
+            <label class="umova"><b>Кількість стовпців 1 матриці <i class="numFormat">M</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numMult2N21">
+            <br>
+
+            <label class="umova"><b>Кількість рядків 2 матриці <i class="numFormat">N</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numMult2N12">
+            <br>
+            <label class="umova"><b>Кількість стовпців 2 матриці <i class="numFormat">M</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numMult2N22">
+            <br>
+            <button type="button" name="button_f" onclick="doMatrix(2, 'Mult2N')">Вручну</button>
+            <button type="button" name="button_f" onclick="changeMatrix(2,2, 'Mult2N')">Заповнити рандомно та перемножити</button>
+            <p class="result" id="buildMatrix2"></p>
+            <p class="result" id="buildMatrix3"></p>
+            <p class="result" id="resultTrans2"></p>
+            <br>
+        </div>
+
+        <div class="block">
             <h3>Додавання матриць</h3>
-    </div>
-    <div class="block">
-        <h3>Множення матриць</h3>
-    </div>
+            <label class="umova"><b>Кількість рядків в матрицях <i class="numFormat">N</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numAdd1">
+            <br>
+            <label class="umova"><b>Кількість стовпців в матрицях <i class="numFormat">M</i>:</b></label>
+            <input type="number" placeholder="Enter number" id="numAdd2">
+            <br>
+            <button type="button" name="button_f" onclick="doMatrix(5, 'Add')">Вручну</button>
+            <button type="button" name="button_f" onclick="changeMatrix(5,2, 'Add')">Заповнити рандомно та додати</button>
+            <p class="result" id="buildMatrix5"></p>
+            <p class="result" id="buildMatrix6"></p>
+            <p class="result" id="resultTrans5"></p>
+            <br>
 
+        </div>
     </main>
 
     <footer>
